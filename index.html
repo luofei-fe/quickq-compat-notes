@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>QuickQ 兼容性笔记：老系统、32 位与文件校验</title>
+<meta name="description" content="独立第三方整理的 QuickQ 兼容性笔记：Windows 7 与 32 位系统能否使用、旧版 macOS 与老 Android 的限制、安装包体积与哈希怎么核对、以及公司电脑的权限卡点。">
+<style>
+body{font-family:system-ui,-apple-system,"Segoe UI",sans-serif;max-width:760px;margin:0 auto;padding:2.5rem 1.25rem;line-height:1.8;color:#151515;background:#fbfbfa}
+h1{font-size:1.65rem;margin:0 0 .4rem}
+.lede{color:#555;margin:0 0 1.75rem}
+h2{font-size:1.02rem;margin:1.9rem 0 .45rem;padding-top:.9rem;border-top:1px solid #e6e4e1}
+ul{padding-left:1.1rem;margin:.4rem 0}
+li{margin:.4rem 0}
+a{color:#0b6b63}
+table{border-collapse:collapse;width:100%;font-size:.92rem;margin:.6rem 0}
+th,td{border-bottom:1px solid #e6e4e1;padding:.45rem .3rem;text-align:left}
+th{color:#444;font-weight:600}
+footer{margin-top:2.5rem;padding-top:1rem;border-top:1px solid #e6e4e1;color:#777;font-size:.85rem}
+</style>
+</head>
+<body>
+<h1>QuickQ 兼容性笔记</h1>
+<p class="lede">「装不上」有三种完全不同的原因：系统版本不够、架构不对、或者这台机器根本不允许装。这一页按这三个方向分开列。</p>
+
+<h2>一、系统版本</h2>
+<table>
+<tr><th>系统</th><th>能否安装</th><th>先查什么</th></tr>
+<tr><td>Windows 7 / 8.1</td><td>可能</td><td>TLS 1.2 补丁与根证书</td></tr>
+<tr><td>Windows 10 / 11</td><td>可以</td><td>虚拟网卡授权</td></tr>
+<tr><td>macOS 10.13 – 10.15</td><td>可以</td><td>系统扩展批准入口位置</td></tr>
+<tr><td>macOS 11+</td><td>可以</td><td>网络扩展与签名</td></tr>
+<tr><td>Android 6 / 7</td><td>可以</td><td>电池优化白名单</td></tr>
+<tr><td>iOS 12 / 13</td><td>取决于商店</td><td>App Store 最低版本</td></tr>
+</table>
+<ul>
+<li><a href="https://quickq-guanwang.com.cn/compat-table.html">QuickQ 老系统兼容对照表</a> —— 完整版本对照</li>
+<li><a href="https://quickq-guanwang.com.cn/win7.html">QuickQ 在 Windows 7 / 8.1 上还能不能用</a></li>
+<li><a href="https://quickq-guanwang.com.cn/old-macos.html">QuickQ 与旧版 macOS：10.13 到 11 的差别</a></li>
+</ul>
+
+<h2>二、架构与硬件</h2>
+<ul>
+<li><a href="https://quickq-guanwang.com.cn/win32.html">QuickQ 与 32 位系统：先确认你真的是 32 位</a></li>
+<li><a href="https://quickq-guanwang.com.cn/low-ram.html">QuickQ 在小内存设备上稳定吗</a></li>
+<li><a href="https://quickq-guanwang.com.cn/old-android.html">QuickQ 在老安卓手机上还能用吗</a></li>
+</ul>
+
+<h2>三、文件与安装包</h2>
+<ul>
+<li><a href="https://win-quickq-download.com.cn/windows.html">QuickQ 电脑版：Windows 安装包怎么核对</a></li>
+<li><a href="https://win-quickq-download.com.cn/hash-mismatch.html">QuickQ 哈希对不上怎么办：五种原因</a></li>
+<li><a href="https://win-quickq-download.com.cn/fake-installer.html">怎么看出一个安装包是假的：五个观察点</a></li>
+</ul>
+
+<h2>四、不允许装的情况</h2>
+<ul>
+<li><a href="https://quickq-win-com.cn/admin-rights.html">QuickQ 装在公司电脑上：权限到底卡在哪</a></li>
+<li><a href="https://quickq-win-com.cn/corp-block.html">QuickQ 在公司网络里连不上</a></li>
+</ul>
+
+<footer>
+<p>校对日期 2026-11-27。独立第三方整理，与产品官方无隶属关系；不提供安装包、旧版本下载与账号。</p>
+</footer>
+</body>
+</html>
